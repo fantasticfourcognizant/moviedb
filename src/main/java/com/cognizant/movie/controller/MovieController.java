@@ -4,6 +4,9 @@ import com.cognizant.movie.model.Movie;
 import com.cognizant.movie.repository.MovieRepository;
 import com.cognizant.movie.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +14,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @CrossOrigin
+@Configuration
+@EnableAutoConfiguration
 @RestController
+@EnableEurekaClient
 public class MovieController {
 
     private  MovieService movieService;
