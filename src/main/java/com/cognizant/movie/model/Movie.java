@@ -21,29 +21,46 @@ public class Movie {
     private Long movieId;
 
     private String metascore;
+    @Column(columnDefinition = "LONGTEXT")
     private String boxOffice;
+    @Column(columnDefinition = "LONGTEXT")
     private String website;
+    @Column(columnDefinition = "LONGTEXT")
     private String imdbRating;
+    @Column(columnDefinition = "LONGTEXT")
     private String imdbVotes;
+    @Column(columnDefinition = "LONGTEXT")
     private String runtime;
+    @Column(columnDefinition = "LONGTEXT")
     private String language;
+    @Column(columnDefinition = "LONGTEXT")
     private String rated;
+    @Column(columnDefinition = "LONGTEXT")
     private String production;
     @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
     private LocalDate released;
     private String imdbid;
+    @Column(columnDefinition = "LONGTEXT")
     private String plot;
+    @Column(columnDefinition = "LONGTEXT")
     private String director;
+    @Column(columnDefinition = "LONGTEXT")
     private String title;
+    @Column(columnDefinition = "LONGTEXT")
     private String actors;
+    @Column(columnDefinition = "LONGTEXT")
     private String response;
+    @Column(columnDefinition = "LONGTEXT")
     private String type;
+    @Column(columnDefinition = "LONGTEXT")
     private String awards;
     @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
     private LocalDate dvd;
     private String year;
+    @Column(columnDefinition = "LONGTEXT")
     private String poster;
     private String country;
+    @Column(columnDefinition = "LONGTEXT")
     private String genre;
     @Column(columnDefinition = "LONGTEXT")
     private String writer;
