@@ -17,7 +17,6 @@ public class Movie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "movie_id", unique = true, nullable = false)
     private Long movieId;
 
     private String metascore;

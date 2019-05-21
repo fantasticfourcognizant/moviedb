@@ -20,6 +20,7 @@ import java.util.List;
 @EnableEurekaClient
 public class MovieController {
 
+    @Autowired
     private  MovieService movieService;
 
     @Autowired
@@ -48,6 +49,7 @@ public class MovieController {
     @PostMapping("/addmovie")
     public ResponseEntity<String> createMovie(@RequestBody Movie movie) {
         Movie newMovie = movieService.addMoview(movie);
+        System.out.println(newMovie);
 
         if(newMovie == null) {
             return new ResponseEntity<>("Movie already exists!!", HttpStatus.ALREADY_REPORTED);
