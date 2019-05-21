@@ -45,7 +45,7 @@ public class MovieController {
 
     }
 
-    @PostMapping("/movie")
+    @PostMapping("/addmovie")
     public ResponseEntity<String> createMovie(@RequestBody Movie movie) {
         Movie newMovie = movieService.addMoview(movie);
 
